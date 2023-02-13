@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" onMousePressed="#click" prefHeight="203.0" prefWidth="553.0" style="-fx-background-color: #DEB887; -fx-background-radius: 30;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.PubController">
+   <children>
+      <Label fx:id="contenu" layoutX="30.0" layoutY="58.0" prefHeight="109.0" prefWidth="347.0" style="-fx-font-size: 25;" />
+      <Label fx:id="date" layoutX="309.0" layoutY="33.0" prefHeight="17.0" prefWidth="161.0" />
+      <Label layoutX="231.0" layoutY="33.0" prefHeight="17.0" prefWidth="78.0" text="publiée dans: " />
+      <Label fx:id="publisher" layoutX="30.0" layoutY="25.0" prefHeight="34.0" prefWidth="107.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="nbComs" alignment="CENTER" layoutX="42.0" layoutY="170.0" opacity="0.75" prefHeight="30.0" prefWidth="35.0" style="-fx-background-color: #FFE4B5; -fx-background-radius: 49; -fx-border-width: 1; -fx-border-color: #000080; -fx-border-radius: 50;" textFill="#3300ff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="77.0" layoutY="170.0" opacity="0.75" prefHeight="30.0" prefWidth="85.0" style="-fx-background-color: #FFE4B5; -fx-background-radius: 49; -fx-border-color: #000080; -fx-border-radius: 50; -fx-border-width: 1;" text="commentaires " />
+      <ImageView fx:id="imgP" fitHeight="125.0" fitWidth="145.0" layoutX="390.0" layoutY="58.0" pickOnBounds="true" />
+   </children>
+</AnchorPane>

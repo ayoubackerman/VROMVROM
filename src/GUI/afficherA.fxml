@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #987284;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AfficherAController">
+   <children>
+      <TableView fx:id="table_view" layoutX="13.0" layoutY="15.0" onMouseClicked="#selectdl" prefHeight="398.0" prefWidth="490.0" style="-fx-background-color: #FFDEAD;">
+         <columns>
+            <TableColumn fx:id="a" prefWidth="75.0" text="Id_user" />
+            <TableColumn fx:id="b" prefWidth="75.0" text="Id_certif" />
+            <TableColumn fx:id="c" prefWidth="97.60003662109375" text="Titre" />
+            <TableColumn fx:id="d" prefWidth="69.5999755859375" text="Type_certif" />
+         </columns>
+      </TableView>
+      <Button fx:id="back3" layoutX="683.0" layoutY="358.0" mnemonicParsing="false" onAction="#back3" prefHeight="38.0" prefWidth="116.0" style="-fx-background-color: #F9B5AC;" text="back" />
+      <TextField fx:id="idddd" layoutX="636.0" layoutY="56.0" prefHeight="32.0" prefWidth="164.0" promptText="supprimer" />
+      <Button fx:id="supp" layoutX="511.0" layoutY="55.0" mnemonicParsing="false" onAction="#handleButtonActionsupprimer" prefHeight="32.0" prefWidth="116.0" style="-fx-background-color: #F9B5AC;" text="supprimer" />
+      <TextField fx:id="rechercher" layoutX="643.0" layoutY="154.0" promptText="rechercher" />
+      <Button fx:id="pdf" layoutX="520.0" layoutY="364.0" mnemonicParsing="false" onAction="#pdf" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: #F9B5AC;" text="pdf" />
+      <TextField fx:id="Type_c" layoutX="627.0" layoutY="279.0" prefHeight="32.0" prefWidth="164.0" promptText="supprimer" />
+      <TextField fx:id="Tit" layoutX="627.0" layoutY="214.0" prefHeight="32.0" prefWidth="164.0" promptText="supprimer" />
+      <Button fx:id="Modif" layoutX="511.0" layoutY="246.0" mnemonicParsing="false" onAction="#Modif" prefHeight="32.0" prefWidth="116.0" style="-fx-background-color: #F9B5AC;" text="modifier" />
+      <ImageView fx:id="QRCode" fitHeight="105.0" fitWidth="116.0" layoutX="511.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="QRCoe" layoutX="617.0" layoutY="15.0" mnemonicParsing="false" onAction="#QR" text="QR" />
+   </children>
+</AnchorPane>

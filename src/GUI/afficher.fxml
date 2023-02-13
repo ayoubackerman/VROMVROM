@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="410.0" prefWidth="803.0" style="-fx-background-color: #987284;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AfficherController">
+   <children>
+      <TableView fx:id="table_view" layoutX="3.0" layoutY="5.0" onMouseClicked="#selectdl" prefHeight="398.0" prefWidth="490.0" style="-fx-background-color: #FFDEAD;">
+        <columns>
+          <TableColumn fx:id="a" prefWidth="75.0" text="id_rec" />
+          <TableColumn fx:id="b" prefWidth="75.0" text="id_user" />
+            <TableColumn fx:id="c" prefWidth="97.60003662109375" text="id_entreprise" />
+            <TableColumn fx:id="d" prefWidth="69.5999755859375" text="type_rec" />
+            <TableColumn fx:id="e" prefWidth="92.00006103515625" text="description" />
+            <TableColumn fx:id="f" prefWidth="75.20001220703125" text="titre_rep" />
+        </columns>
+      </TableView>
+      <Button fx:id="back3" layoutX="673.0" layoutY="348.0" mnemonicParsing="false" onAction="#back3" prefHeight="38.0" prefWidth="116.0" style="-fx-background-color: #F9B5AC;" text="back" />
+      <TextField fx:id="idddd" layoutX="626.0" layoutY="46.0" prefHeight="32.0" prefWidth="164.0" />
+      <Button fx:id="supp" layoutX="501.0" layoutY="45.0" mnemonicParsing="false" onAction="#handleButtonActionsupprimer" prefHeight="32.0" prefWidth="116.0" style="-fx-background-color: #F9B5AC;" text="supprimer" />
+      <TextField fx:id="rechercher" layoutX="635.0" layoutY="108.0" prefHeight="38.0" prefWidth="146.0" promptText="recherch" />
+      <Button fx:id="pdf" layoutX="504.0" layoutY="114.0" mnemonicParsing="false" onAction="#pdf" prefHeight="26.0" prefWidth="116.0" style="-fx-background-color: #F9B5AC;" text="PDF" />
+      <TextField fx:id="idddd1" layoutX="626.0" layoutY="244.0" prefHeight="32.0" prefWidth="164.0" />
+      <TextField fx:id="idddd11" layoutX="626.0" layoutY="294.0" prefHeight="32.0" prefWidth="164.0" />
+      <TextField fx:id="idddd12" layoutX="626.0" layoutY="204.0" prefHeight="32.0" prefWidth="164.0" />
+      <Button fx:id="mode" layoutX="520.0" layoutY="248.0" mnemonicParsing="false" onAction="#modifier" text="MODIFIEFR" />
+   </children>
+</AnchorPane>

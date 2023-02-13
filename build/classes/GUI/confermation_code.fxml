@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #987284;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Confermation_codeController">
+   <children>
+      <TextField fx:id="codeinput" layoutX="271.0" layoutY="154.0" />
+      <Button fx:id="resend" layoutX="473.0" layoutY="316.0" mnemonicParsing="false" onAction="#resendcode" style="-fx-background-color: #F9B5AC;" text="resend Code" />
+      <Button layoutX="407.0" layoutY="316.0" mnemonicParsing="false" onAction="#verifycode" style="-fx-background-color: #F9B5AC;" text="Verify" />
+      <Button layoutX="333.0" layoutY="316.0" mnemonicParsing="false" onAction="#cancelcode" style="-fx-background-color: #F9B5AC;" text="Cancel" />
+   </children>
+</AnchorPane>
